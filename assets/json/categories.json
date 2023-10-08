@@ -1,0 +1,38 @@
+[
+  {
+    "id": 4247,
+    "name": "Action",
+    "lang": "",
+    "icon": "https://multiacs.com/Alpha/movies/action.jpeg"
+  },
+  {
+    "id": 4248,
+    "name": "Science Fiction",
+    "lang": "",
+    "icon": "https://multiacs.com/Alpha/movies/science%20fiction..jpeg"
+  },
+  {
+    "id": 4249,
+    "name": "Aventure",
+    "lang": "",
+    "icon": "https://multiacs.com/Alpha/movies/adventure..jpeg"
+  },
+  {
+    "id": 4250,
+    "name": "Comédie",
+    "lang": "",
+    "icon": "https://multiacs.com/Alpha/movies/com%c3%a9die.jpeg"
+  },
+  {
+    "id": 4251,
+    "name": "Horreur",
+    "lang": "",
+    "icon": "https://multiacs.com/Alpha/movies/horreur..jpeg"
+  },
+  {
+    "id": 4252,
+    "name": "Drame",
+    "lang": "",
+    "icon": "https://multiacs.com/Alpha/movies/drame.jpeg"
+  }
+]
