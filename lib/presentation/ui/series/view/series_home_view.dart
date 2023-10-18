@@ -19,9 +19,9 @@ import '../viewmodel/series_home_viewmodel.dart';
 // ignore: must_be_immutable
 class SeriesHomeView extends StatefulWidget {
 
-  String nameSlider;
+  final String nameSlider;
 
-  SeriesHomeView({
+  const SeriesHomeView({
     required this.nameSlider,
     super.key,
   });

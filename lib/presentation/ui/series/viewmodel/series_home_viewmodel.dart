@@ -11,6 +11,7 @@ import '../../../../domain/services/category_services.dart';
 import '../../../../domain/services/serie_services.dart';
 import '../../../resources/assets_manager.dart';
 import '../../../resources/constants_manager.dart';
+import '../view/details_serie.dart';
 
 class SeriesHomeViewModel {
   List<SerieByCategoryInfosModel> listInitialOfSeries = [];
@@ -42,7 +43,7 @@ class SeriesHomeViewModel {
   ValueStream<Map<String, String>> get getMenuChosenValues =>
       _menuFilterChosenValueController.stream;
 
-  // start Serie home view
+  /// start Serie home view
   Function() get fetchSeriesHomeData => _fetchSeriesHomeData;
 
   void _fetchSeriesHomeData() async {
@@ -72,9 +73,11 @@ class SeriesHomeViewModel {
   void onSliderClicked(int index, var slider) async {
     final screenModel = _seriesRouteDataStreamController.value;
     if (screenModel.indexSliderClicked == index) {
-      if (kDebugMode) {
-        print("slider clicked ($index) = ${slider.name}");
-      }
+      Get.to(() => DetailsSerie(
+        slider: slider,
+        // seriesHomeViewModel: _viewModel,
+      ));
+
     }
     screenModel.indexSliderClicked = index;
     _seriesRouteDataStreamController.sink.add(screenModel);

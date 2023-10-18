@@ -20,6 +20,23 @@ class SerieServices {
   }
 
 
+  Future<ResponseSeasonBySerie> getAllSeasons() async {
+
+    String jsonString = await rootBundle.loadString('assets/json/seasons.json');
+
+
+    print("getSeries (from getAllSeries) = $jsonString");
+    return ResponseSeasonBySerie.fromJson(jsonDecode(jsonString));
+  }
+
+  Future<ResponseEpisodeBySerieAndSeason> getAllEpisodes() async {
+    String jsonString = await rootBundle.loadString('assets/json/episodes.json');
+
+
+    print("getSeries (from getAllSeries) = $jsonString");
+    return ResponseEpisodeBySerieAndSeason.fromJson(jsonDecode(jsonString));
+  }
+
 }
 
 final serieService = SerieServices();

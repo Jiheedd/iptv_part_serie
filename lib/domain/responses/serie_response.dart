@@ -103,13 +103,13 @@ class SerieByIdInfoModel {
   // Saison
  // **************************
 
-class ResponseSaisonBySerie {
+class ResponseSeasonBySerie {
   List<SeasonModel> listSaisons;
 
-  ResponseSaisonBySerie({required this.listSaisons});
+  ResponseSeasonBySerie({required this.listSaisons});
 
-  factory ResponseSaisonBySerie.fromJson(List<dynamic> json) {
-    return ResponseSaisonBySerie(
+  factory ResponseSeasonBySerie.fromJson(List<dynamic> json) {
+    return ResponseSeasonBySerie(
       listSaisons: List<SeasonModel>.from(
           json.map((x) => SeasonModel.fromJson(x))),
     );
